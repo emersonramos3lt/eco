@@ -1,0 +1,106 @@
+@media(max-width: 580px) {
+    nav #mainMenu {
+        height: 100vh;
+        position: fixed;
+        display: none;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background-color: #faf6f1;
+        transition: all .8s ease-in-out 0s;
+        z-index: 1;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        top: 0;
+    }
+
+    nav #openMenu, #closeMenu {
+        color: #3F612D;
+    }
+
+    nav #openMenu {
+        display: block;
+    }
+
+    nav #mainMenu #closeMenu {
+        display: block;
+        top: 20px;
+        right: 20px;
+        position: absolute;
+    }
+
+    nav #mainMenu li {
+        margin-bottom: 4rem;
+    }
+
+    nav #mainMenu li a {
+        font-size: 4.2rem;
+    }
+
+    .slider {
+        height: 400px;
+    }
+    
+    main {
+        max-width: 400px;
+    }
+    
+    main p {
+        font-size: 1rem;
+    }
+    
+    main .section1 h1 {
+        font-size: 2.5rem;
+    }
+    
+    main .section1 p {
+        font-size: 1rem;
+    }
+    
+    main .section2 h2 {
+        font-size: 2.2rem;
+    }
+    
+    main .section2 p {
+        font-size: 1rem;
+    }
+    
+    main .section2 .grid {
+        display: flex;
+        flex-direction: column;
+    } 
+    
+    .about {
+        max-width: 400px;
+    }
+    
+    .about h1 {
+        font-size: 2.5rem;
+    }
+    
+    .about p {
+        font-size: 1rem;
+    }
+
+    main .grid-final {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        height: 100vh;
+    }
+    
+    main .grid-final h1 {
+        font-size: 2.5rem;
+    }
+    
+    footer {
+        font-size: 1rem;
+    }
+
+    .grid {
+        display: flex;
+        flex-direction: column;
+        max-width: 400px;
+    }
+}
