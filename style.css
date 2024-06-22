@@ -1,0 +1,279 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+body {
+    margin: 0;
+    background-color:#faf6f1;
+    font-family: "Roboto", sans-serif;
+    color: #3F612D;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #3F612D;
+}
+
+header h1 a {
+    font-size: 1.8rem;
+    text-decoration: none;
+    color: #3F612D;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav #mainMenu {
+    display: flex;
+    list-style-type: none;
+}
+
+nav #mainMenu li a {
+    text-decoration: none;
+    color: #3F612D;
+    margin-right: 1rem;
+    font-size: 1.3rem;
+}
+
+nav #openMenu {
+    display: none;
+    font-size: 2rem;
+    cursor: pointer;
+    margin: 1rem;
+}
+
+nav #mainMenu #closeMenu {
+    cursor: pointer;
+    font-size: 2rem;
+    display: none;
+}
+
+nav a:hover {
+    position: relative;
+}
+
+nav a::before {
+    content: "";
+    height: 2px;
+    visibility: hidden;
+    width: 100%;
+    background-color: #3F612D;
+    bottom: 0;
+    left: 0;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: all .2s;
+}
+
+nav a:hover::before {
+    position: absolute;
+    visibility: visible;
+    transform: scaleX(1);
+}
+
+section {
+    max-height: fit-content;
+}
+
+
+.slides {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    border-bottom: 2px solid #3F612D;
+
+    position: relative;
+    overflow: hidden;
+}
+
+.slides img {
+    width: 100%;
+    height: 100%;
+    display: none;
+    animation: slide-animation 0.7s ease-in-out;
+}
+
+
+img.displaySlide {
+    display: block;
+}
+
+@keyframes slide-animation {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+main {
+    max-width: 1200px;
+    margin: auto;
+}
+
+main h1 {
+    text-align: center;
+}
+
+main h2 {
+    text-align: center;
+}
+
+main p {
+    line-height: 30px;
+    font-size: 1.1rem;
+}
+
+main .section1 h1 {
+    text-align: center;
+    font-size: 3rem;
+}
+
+main .section1 h2 {
+    text-align: center;
+}
+
+main .section1 p {
+    font-size: 1.1rem;
+    line-height: 30px;
+    text-align: center;
+}
+
+main .section2 h2 {
+    text-align: center;
+    font-size: 2.5rem;
+}
+
+main .section2 p {
+    text-align: center;
+    font-size: 1.1rem;
+    line-height: 30px;
+}
+
+main .section2 .icon {
+    font-size: 2rem;
+}
+
+main .section2 .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
+    justify-content: center;
+    text-align: center;
+}
+
+main .section2 .grid div {
+    border: 2px solid #3F612D;
+    border-radius: 5px;
+    background-color: #fff;
+}
+
+.parallax {
+    position: relative;
+    margin-top: 3.5rem;
+    margin-bottom: 0;
+
+    width: 100%;
+    height: 70vh;
+}
+
+
+.parallax::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: url('./images/parallax.jpg');
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.background-about {
+
+    width: 100%;
+    height: 100%;
+
+    background-color: #3F612D;
+}
+
+.about {
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   gap: 1rem;
+   justify-content: center;
+   align-items: center;
+
+    max-width: 800px;
+    height: 50vh;
+    margin: auto;
+    color: #fff;
+}
+
+.about h1 {
+    font-size: 3rem;
+}
+
+.about p {
+    line-height: 30px;
+    font-size: 1.1rem;
+}
+
+.about a {
+    text-decoration: none;
+    color: #3F612D;
+    background-color: #fff;
+    padding: 1.5rem;
+    font-size: 1.1rem;
+    border: 1px solid #fff;
+    transition: all .2s;
+}
+
+.about a:hover {
+    background-color: #3F612D;
+    color: #fff;
+}
+
+main .grid-final {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+}
+
+main .grid-final h1 {
+    font-size: 3rem;
+}
+
+main .grid-final span {
+    background-color: #3F612D;
+    color: #fff;
+    padding: 2px;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+
+    font-size: 1.2rem;
+    border-top: 2px solid #6aa54a;
+    padding: 1rem;
+}
+
+footer a {
+    color: #3F612D;
+    margin-right: 10px;
+    transition: all .2s;
+}
+
+footer a:hover {
+    color: #3F612D;
+}
